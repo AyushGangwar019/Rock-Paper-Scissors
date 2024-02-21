@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+   text-align: center;
+}
+
+h1 {
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    background-color: blueviolet;
+  }
+
+.choices{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    gap: 40px;
+    border-radius: 50%;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor : pointer;
+}
+#rock{
+    box-shadow: 0px 0px 50px rgb(239, 147, 172);
+}
+#rock :hover{
+    box-shadow: 0px 0px 20px rgb(239, 147, 172);
+    transform: scale(1.1);
+}
+#paper{
+    box-shadow: 0px 0px 50px rgb(208, 146, 244);
+}
+#paper :hover{
+    box-shadow: 0px 0px 20px rgb(208, 146, 244);
+    transform: scale(1.1);
+}
+#scissors{
+    box-shadow: 0px 0px 50px rgb(106, 171, 245);
+}
+#scissors :hover{
+    box-shadow: 0px 0px 20px rgb(106, 171, 245);
+    transform: scale(1.1);
+}
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    gap: 5rem;
+  }
+.message-container{
+    margin-top: 8rem;
+}
+#msg{
+    font-size: 2.5rem;
+    padding: 10px;
+    background-color: blueviolet;
+    box-shadow: 2px 2px 50px blueviolet;
+    color: #fff;
+    display:inline;
+    border-radius: 20px;
+    
+}
+@media only screen and (max-width :800px) {
+    
+    .choices{
+        margin-top: 2vh;
+        gap: 8px;
+    }
+    #rock{
+        margin-top: 6rem;
+    }
+    #scissors{
+        margin-top: 6rem;
+    }
+    
+    .score-board{
+        margin-top: 7rem;}
+   
+    .message-container{
+        margin-top: 8rem;
+    }
+    #msg{
+        display:block;
+        border-radius: 0px;
+    }
+}
